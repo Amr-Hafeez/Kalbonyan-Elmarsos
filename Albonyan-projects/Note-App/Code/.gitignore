@@ -1,0 +1,6 @@
+mock-data.json
+populate.js
+package-lock.json
+.env
+
+node_modules

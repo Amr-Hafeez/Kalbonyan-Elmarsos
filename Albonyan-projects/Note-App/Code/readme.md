@@ -1,1 +1,1 @@
-# Note App Project Code
+# Note Posts Project Code

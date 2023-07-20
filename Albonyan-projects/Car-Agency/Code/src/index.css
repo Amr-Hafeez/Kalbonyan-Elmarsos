@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.car:hover div:first-child {
+    @apply translate-x-0
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background-color: #fafafa;*/
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    /*height: 96px;*/
+}
+
+.nav-v {
+    height: calc(100vh - 80px);
+}
+
+
+.sticky .section-hero {
+    /*margin-top: -96px;*/
+}
+
+.sticky .header {
+    background-color: #fff;
+    color: #12273D;
+    height: 80px;
+    padding: 20px 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .header .bg-second {
+    color: white;
+}
+
+nav {
+    font-weight: bold;
+}
+
+aside {
+    height: calc(100vh - 80px);
+    width: 375px;
+    background-color: rgba(16, 25, 39, 0.9);
+    position: fixed;
+    top: 80px;
+    right: 0;
+    transition: all 0.4s;
+    transform: translateX(100%);
+}
+
+aside.open {
+    transform: translateX(0);
+}

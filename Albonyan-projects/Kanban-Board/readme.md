@@ -1,4 +1,4 @@
 # Kanban Board 
-[Demo]()
+[Demo](https://second-task-beta.vercel.app/) | [Code](./Code)
 
-[Code](./Code/)
+![Project Preview](Kanban-ToDo.png)

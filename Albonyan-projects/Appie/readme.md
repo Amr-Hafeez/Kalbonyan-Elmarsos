@@ -1,4 +1,4 @@
 # Appie 
-[Demo]()
+[Demo](https://first-task-liart.vercel.app/) | [Code](./Code)
 
-[Code](./Code/)
+![Project Preview](Appie-app.png)

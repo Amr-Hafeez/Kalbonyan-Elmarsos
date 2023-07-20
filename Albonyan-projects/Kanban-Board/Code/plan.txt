@@ -1,0 +1,7 @@
+1. Set up the main files ✔
+2. Finish the HTML part ✔
+3. Finish the css part. ✔
+4. Start with the JS. ✔
+5. The added functionality. ✔
+6. The remove functionality. ✔
+7. Drag & Drop ✔
