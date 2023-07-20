@@ -1,3 +1,12 @@
+// const server = require('http');
+//
+// const server = http.createServer((req, res) => {
+//     res.end('Hello world (from Node!)');
+// });
+//
+// server.listen(3000);
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -8,8 +17,8 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  console.log('Some middleware!');
-  next();
+    console.log('Some middleware!');
+    next();
 })
 
 app.use(todoRoutes);
