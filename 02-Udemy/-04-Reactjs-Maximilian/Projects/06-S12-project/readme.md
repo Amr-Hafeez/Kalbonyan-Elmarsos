@@ -1,1 +1,3 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
+
+![Project Preview](react-s12-project.png)
