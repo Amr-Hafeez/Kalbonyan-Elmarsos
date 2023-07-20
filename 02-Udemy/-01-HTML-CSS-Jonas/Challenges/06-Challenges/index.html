@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+    <title>Chapter 04 | Challenge 02</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.4;
+        }
+
+        .product::before {
+            content: "SALE";
+            position: absolute;
+            top: -18px;
+            left: -35px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+        }
+
+        .product {
+            width: 825px;
+            margin: 50px auto;
+            border: 4px solid #000;
+
+            position: relative;
+        }
+
+        .product-title {
+            text-align: center;
+            background-color: #f7f7f7;
+            font-weight: bold;
+            padding: 12px 0;
+        }
+
+        .price {
+            font-size: 24px;
+        }
+
+        .shipping {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #777;
+
+            /*margin-bottom: 18px;*/
+        }
+
+        .more-info:link,
+        .more-info:visited {
+            color: black;
+            display: inline-block;
+
+            margin-bottom: 32px;
+            margin-top: 15px;
+        }
+
+        .more-info:hover {
+            text-decoration: none;
+        }
+
+        .colors {
+            /*margin-bottom: 28px;*/
+        }
+
+        .color {
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+        .details-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        .details-list {
+            list-style: square;
+            /*margin-left: 18px;*/
+
+            margin-left: 20px;
+        }
+
+        .details-list li {
+            margin-bottom: 10px;
+        }
+
+        .add-cart {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        .add-cart:hover {
+            color: #000;
+            background-color: #fff;
+            border-top: 4px solid #000;
+        }
+
+        /* Flexbox Layout */
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .product-details {
+            margin-top: 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<section class="product">
+    <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+    <div class="container clearfix">
+        <img
+                src="./challenges.jpg"
+                alt="Product img"
+                width="250"
+                height="250"
+        />
+        <div class="product-info">
+            <div class="price-box">
+                <p class="price"><strong>$65.00</strong></p>
+                <p class="shipping">Free shipping</p>
+            </div>
+            <p class="product-description">
+                Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.
+            </p>
+            <a href="#" class="more-info">More information &rarr;</a>
+            <div class="colors">
+                <div class="color "></div>
+                <div class="color blue"></div>
+                <div class="color red"></div>
+                <div class="color yellow"></div>
+                <div class="color green"></div>
+                <div class="color brown"></div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h3 class="details-title">Product details</h3>
+            <ul class="details-list">
+                <li>
+                    Lightweight, durable canvas sneaker
+                </li>
+                <li>
+                    Lightly padded footed for added comfort
+                </li>
+                <li>
+                    Iconic Chuck Taylor ankle patch
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="add-cart">Add to cart</button>
+</section>
+</body>
+</html>

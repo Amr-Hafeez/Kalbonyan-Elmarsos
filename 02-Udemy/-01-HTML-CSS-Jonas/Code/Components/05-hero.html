@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+    <title>Hero Component</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Rubik', sans-serif;
+            color: #444;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*header::before {*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    background-color: rgba(0, 0, 0, 0.5);*/
+        /*}*/
+
+        header {
+            height: 100vh;
+            background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.6),
+                    rgba(34, 34, 34, 0.6)),
+            url("https://media.istockphoto.com/id/1372644935/photo/happy-young-man-eating-lunch-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=ymiUHFdoF50yWgP2rtcPnWS8vftYTWH9DPIeyMJe-zw=");
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+
+        nav {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 32px;
+        }
+
+        .header-container {
+            position: absolute;
+            width: 1200px;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            /*background-color: violet;*/
+        }
+
+        .header-container-inner {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 32px;
+            line-height: 1.05;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        .btn:link,
+        .btn:visited {
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #e67e22;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 9px;
+        }
+
+        h2 {
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        section {
+            padding: 96px 0;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+    </nav>
+    <div class="header-container ">
+        <div class="header-container-inner">
+            <h1>A healthy meal delivered to your door, ever single day</h1>
+            <p>
+                The smart 365-days-per-year food subscription that will make you eat heathy again. Tailored to your
+                personal
+                tastes and nutritional needs
+            </p>
+            <a href="#" class="btn">Start eating well</a>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cumque debitis deserunt
+            distinctio doloribus eius est fuga ipsum itaque laborum libero minus nemo nesciunt odio odit officiis
+            pariatur placeat provident, qui quibusdam recusandae rem rerum sint tempore tenetur ullam veniam. Debitis
+            dolores nulla quaerat quisquam sapiente sunt. At ex nihil sed voluptatum. A cumque dolorum eum illo
+            laudantium, quo.
+        </p>
+    </div>
+</section>
+</body>
+</html>

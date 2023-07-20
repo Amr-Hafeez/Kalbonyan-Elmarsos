@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+
+    <title>Posts Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #343a40;
+            font-size: 24px;
+            height: 100vh;
+            text-align: center;
+            font-weight: bold;
+
+            display: grid;
+            grid-template-columns: 80px 400px 1fr 250px;
+            /*grid-template-columns: auto auto 1fr auto;*/
+            /*grid-template-rows: auto 1fr;*/
+            grid-template-rows: 80px 1fr;
+        }
+
+        nav,
+        section,
+        main,
+        aside {
+            padding-top: 24px;
+        }
+
+        nav {
+            color: #fff;
+            background-color: #343a40;;
+            grid-row: 1 / -1;
+            /*padding: 15px 20px;*/
+        }
+
+        menu {
+            background-color: #7048e8;
+            grid-column: 2 / -1;
+            padding: 0 40px;
+
+            display: flex;
+            align-items: center;
+            /*justify-items: flex-start;*/
+            gap: 12px;
+        }
+
+        button {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #5f3dc4;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        button:last-child {
+            display: block;
+            background-color: #d6336c;
+            /*align-self: flex-end;*/
+            /*justify-self: end;*/
+            margin-left: auto;
+        }
+
+        section {
+            background-color: #e9ecef;
+            padding: 40px;
+
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .email {
+            background-color: #adb5db;
+            height: 96px;
+            flex-shrink: 0;
+
+            display: flex;
+            /*justify-items: center;*/
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+<nav>Nav</nav>
+<menu>
+    <button>New</button>
+    <button>Replay</button>
+    <button>Forward</button>
+    <button>Mark unread</button>
+    <button>Trash</button>
+</menu>
+<section>
+    <div class="email">Email 1</div>
+    <div class="email">Email 2</div>
+    <div class="email">Email 3</div>
+    <div class="email">Email 4</div>
+    <div class="email">Email 5</div>
+    <div class="email">Email 6</div>
+    <div class="email">Email 7</div>
+    <div class="email">Email 8</div>
+    <div class="email">Email 9</div>
+    <div class="email">Email 10</div>
+</section>
+<main>Email view</main>
+<aside>Additional info</aside>
+</body>
+</html>

@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #444;
+    font-family: sans-serif;
+    border-top: 10px solid #1098ad;
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    font-size: 18px;
+}
+
+nav a:link {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    height: 80px;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+article {
+    margin-bottom: 60px;
+    /*position: relative;*/
+}
+
+h1,
+h2,
+h3 {
+    color: #1098ad;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: "TOP";
+    color: #444;
+    font-size: 16px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    background-color: #ffe70e;
+    padding: 5px 10px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 40px 0 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul:not(.related), ol {
+    margin: 0 0 0 60px;
+    /*margin-bottom: 20px;*/
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+    /*margin: 0;*/
+}
+
+.related {
+    list-style: none;
+    /*display: block;*/
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 40px;
+    /*width: 500px;*/
+}
+
+/*.first-li {*/
+/*  font-weight: bold;*/
+/*}*/
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/*li:nth-child(odd) {*/
+/*  color: #f00;*/
+/*}*/
+
+/* Misconception: this won't work. */
+article p:last-child {
+    color: red;
+}
+
+button {
+    font-size: 22px;
+    padding: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* Styling links */
+a:link,
+a:visited {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: underline orangered;
+    font-weight: bold;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+
+/* Floats
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  width: 70%;
+  float: left;
+}
+
+aside {
+  width: 25%;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+*/
+
+/* Flexbox */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-box {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+aside ul li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+aside ul li a:link {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.related-author {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Flexbox Layout */
+/*.row {*/
+/*  display: flex;*/
+/*  align-items: flex-start;*/
+/*  gap: 60px;*/
+/*}*/
+
+/*aside {*/
+/*  flex: 0 0 300px;*/
+/*}*/
+
+/* End Flexbox */
+
+/* CSS Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 60px;
+}
+
+.main-header {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+article {
+
+}
+
+aside {
+    align-self: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
