@@ -2,8 +2,8 @@
 
 #### Track Your Job Search
 
-Project in Action - [Jobify]()
+Project in Action—[Jobify](https://mern-project-jobify-tj6j.onrender.com/)
 
 #### Screenshot
 
-![image](https://via.placeholder.com/468x300?text=Project+Image)
+![image](Jobify.png)
