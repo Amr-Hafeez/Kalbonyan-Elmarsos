@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Al Ma`adi",
+			"country": {
+				"code": "EG",
+				"name": "Egypt"
+			},
+			"subdivision": {
+				"code": "C",
+				"name": "Cairo Governorate"
+			},
+			"timezone": "Africa/Cairo",
+			"latitude": 29.9535,
+			"longitude": 31.2502
+		},
+		"timestamp": 1688398884886
+	}
+}
