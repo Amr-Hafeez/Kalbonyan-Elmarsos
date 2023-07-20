@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lato', sans-serif;
+}
+
+.seat {
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    background-color: #444451;
+    border-radius: 12px 12px 0 0;
+    display: inline-block;
+}
+
+.selected {
+    background-color: #6FEAF6;
+}
+
+.occupied {
+    background-color: #FFFFFF;
+}
+
+.picker select {
+    margin-left: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    appearance: none;
+}
+
+.picker select:focus {
+    outline: none;
+}
+
+.cases {
+    background-color: #201f2e;
+    color: #777;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 40px 0 40px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    list-style: none;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.screen-container {
+    perspective: 1000px;
+}
+
+.screen {
+    width: 80%;
+    height: 70px;
+    margin: 15px auto;
+    transform: rotateX(-45deg);
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+}
+
+.row {
+    text-align: center;
+}
+
+.seat:nth-of-type(2),
+.seat:nth-last-of-type(3) {
+    margin-right: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.text {
+    margin-top: 30px;
+    color: white;
+}
+
+.text span {
+    color: #6FEAF6;
+}

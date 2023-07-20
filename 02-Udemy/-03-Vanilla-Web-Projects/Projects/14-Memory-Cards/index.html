@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+            integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Memory Cards</h1>
+        <button id="add-new">
+            <i class="fas fa-plus"></i>
+            Add New Card
+        </button>
+    </header>
+
+<!---->
+    <div class="cards" id="cards"></div>
+
+<!--    -->
+    <div class="switchers">
+        <i id="prev" class="fas fa-arrow-left"></i>
+        <p class="current-index" id="current-index"></p>
+        <i id="next" class="fas fa-arrow-right"></i>
+    </div>
+</div>
+
+<button class="clear" id="clear-cards">
+    <i class="fas fa-trash"></i>
+    Clear Cards
+</button>
+
+<form class="form" id="form">
+    <div class="container">
+        <div class="header">
+            <h2>Add New Card </h2>
+            <span id="form-close">X</span>
+        </div>
+
+        <div class="box">
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter question..."></textarea>
+        </div>
+
+        <div class="box">
+            <label for="answer">Answer</label>
+            <textarea id="answer" placeholder="Enter answer..."></textarea>
+        </div>
+
+        <button type="submit">
+            <i class="fas fa-plus"></i>
+            Add Card
+        </button>
+    </div>
+</form>
+</form>
+</body>
+</html>
