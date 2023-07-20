@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Maximilian Schwarzmüller",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.9",
+    "express": "^4.16.3",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "forever-monitor": "^3.0.3",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.3.2",
+    "nodemailer": "^6.9.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pdfkit": "^0.13.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.31.1",
+    "stripe": "^12.8.0",
+    "supervisor": "^0.12.0"
+  }
+}
